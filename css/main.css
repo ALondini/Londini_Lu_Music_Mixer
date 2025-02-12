@@ -2,4 +2,5 @@ body {
     height: 100%;
     background-image: url(../images/Plasma_Island_GoldM.webp);
     background-repeat: no-repeat;
+    background-size: cover;
 }
