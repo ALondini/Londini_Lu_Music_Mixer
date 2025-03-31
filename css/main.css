@@ -9,3 +9,12 @@ body {
 #buttons img {
     height: 50px;
 }
+
+#play-icon, #pause-icon {
+    margin-top: 335px;
+    margin-left: 70px;
+}
+
+#speaker-icon, #refresh-icon {
+    margin-top: 370px;
+}
