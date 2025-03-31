@@ -314,7 +314,7 @@ h5 {
         grid-template-columns: repeat(12, minmax(0, 1fr));
         grid-column-gap: 20px;
         max-width: 1600px;
-        margin: 0 auto;
+        margin: 0 110px;
         padding-left: 15px;
         padding-right: 15px;
     }
