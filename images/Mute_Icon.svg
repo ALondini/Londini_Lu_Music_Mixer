@@ -3,22 +3,22 @@
   <defs>
     <style>
       .cls-1 {
-        fill: #f6ff43;
-        stroke-linejoin: round;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #fbffa2;
-        stroke-width: 33.33px;
-      }
-
-      .cls-2 {
         fill: none;
         stroke-linecap: round;
         stroke-miterlimit: 26.67;
       }
+
+      .cls-1, .cls-2 {
+        stroke: #f6ff43;
+        stroke-width: 33.33px;
+      }
+
+      .cls-2 {
+        fill: #f6ff43;
+        stroke-linejoin: round;
+      }
     </style>
   </defs>
-  <path class="cls-1" d="M236.67,16.67l-113.33,100H16.67v126.67h106.67l113.33,100V16.67Z"/>
-  <path class="cls-2" d="M303.33,96.67l133.33,160M436.67,96.67l-133.33,160"/>
+  <path class="cls-2" d="M236.66,16.67l-113.33,100H16.67v126.67h106.67l113.33,100V16.67Z"/>
+  <path class="cls-1" d="M303.32,96.66l133.33,160M436.67,96.66l-133.33,160"/>
 </svg>

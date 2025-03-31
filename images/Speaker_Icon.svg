@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461.01 359.87">
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 461 359.87">
   <defs>
     <style>
       .cls-1 {
-        fill: #f6ff43;
-        stroke-linejoin: round;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #fbffa2;
-        stroke-width: 33.33px;
-      }
-
-      .cls-2 {
         fill: none;
         stroke-linecap: round;
         stroke-miterlimit: 26.67;
       }
+
+      .cls-1, .cls-2 {
+        stroke: #f6ff43;
+        stroke-width: 33.33px;
+      }
+
+      .cls-2 {
+        fill: #f6ff43;
+        stroke-linejoin: round;
+      }
     </style>
   </defs>
-  <path class="cls-1" d="M239.26,16.67l-114.36,98.91H16.67v127.29h106.59l116,100.34V16.67Z"/>
-  <path class="cls-2" d="M296.67,108.87c28.43,43.31,28.43,99.36,0,142.67M344,61.54c52.01,70.56,52.01,166.77,0,237.33M387.33,18.21c76.02,94.62,76.02,229.38,0,324"/>
+  <path class="cls-2" d="M239.25,16.67l-114.36,98.91H16.67v127.29h106.59l116,100.34V16.67Z"/>
+  <path class="cls-1" d="M296.67,108.87c28.43,43.31,28.43,99.36,0,142.67M344,61.54c52.01,70.56,52.01,166.77,0,237.33M387.32,18.2c76.02,94.62,76.02,229.38,0,324"/>
 </svg>
