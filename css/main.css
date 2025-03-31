@@ -18,3 +18,15 @@ body {
 #speaker-icon, #refresh-icon {
     margin-top: 370px;
 }
+
+#monster-bowgart{
+    size-adjust: 300px;
+}
+
+#monster-bowgart, #monster-congle, #monster-deedge{
+    margin-left: 30px;
+}
+
+#monster-dwumrohl, #monster-entbrat, #monster-maw, #monster-thrumble{
+    margin-left: 50px;
+}
