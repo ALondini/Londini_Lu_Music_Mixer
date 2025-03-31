@@ -1,8 +1,9 @@
 body {
-    height: 100%;
+    min-height: 150vh;
     background-image: url(../images/Plasma_Island_GoldM.webp);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
 }
 
 #buttons img {
