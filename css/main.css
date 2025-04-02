@@ -17,7 +17,8 @@ body {
     margin: 0 auto;
     padding: 20px;
     position: relative;
-    overflow: hidden; /* Prevent overflow */
+    overflow: hidden;
+    /* Prevent overflow */
 }
 
 /* Make all images responsive by default */
@@ -59,16 +60,30 @@ img {
     width: 100%;
     height: 80vh;
     position: relative;
-    overflow: visible; /* Allow monsters to be visible during drag */
+    min-height: 100vh;
+    overflow: visible;
+    /* Allow monsters to be visible during drag */
     margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.monster {
+    position: relative;
+    /* Ensures they stay within the flow */
+    max-width: 100%;
+    /* Prevents them from overflowing */
+    display: block;
+    /* Ensures proper placement */
 }
 
 /* Left and right monster sections - fix container positioning */
-.left-monsters, .right-monsters {
+.left-monsters,
+.right-monsters {
     position: relative;
     width: 40%;
     height: 100%;
-    z-index: 1; /* Ensure containers have a z-index */
+    z-index: 1;
+    /* Ensure containers have a z-index */
 }
 
 /* Common styles for all monsters - fix z-index issues */
@@ -78,7 +93,8 @@ img {
     height: auto;
     cursor: grab;
     transition: all 0.2s ease;
-    z-index: 5; /* Give all monsters a baseline z-index */
+    z-index: 5;
+    /* Give all monsters a baseline z-index */
 }
 
 /* Left side monster positions in a semi-circle */
@@ -151,10 +167,12 @@ img {
 
 /* Responsive adjustments for medium screens */
 @media (max-width: 960px) {
-    .left-monsters, .right-monsters {
+
+    .left-monsters,
+    .right-monsters {
         width: 45%;
     }
-    
+
     .monster-item {
         width: clamp(70px, 8vw, 120px);
     }
@@ -167,8 +185,9 @@ img {
         height: auto;
         padding: 20px 0;
     }
-    
-    .left-monsters, .right-monsters {
+
+    .left-monsters,
+    .right-monsters {
         width: 100%;
         height: auto;
         display: flex;
@@ -176,7 +195,7 @@ img {
         justify-content: space-around;
         margin-bottom: 20px;
     }
-    
+
     .monster-item {
         position: relative;
         top: auto !important;
@@ -186,20 +205,23 @@ img {
         margin: 5px;
         max-width: 100px;
     }
-    
+
     .monster-item[data-dragging="true"] {
-        width: clamp(100px, 12vw, 150px) !important; /* Smaller on mobile */
+        width: clamp(100px, 12vw, 150px) !important;
+        /* Smaller on mobile */
     }
 }
 
 
 /* Control button positioning */
-#play-icon, #pause-icon {
+#play-icon,
+#pause-icon {
     margin-top: 335px;
     margin-left: 70px;
 }
 
-#speaker-icon, #refresh-icon {
+#speaker-icon,
+#refresh-icon {
     margin-top: 370px;
 }
 
@@ -207,7 +229,7 @@ img {
 .right-monsters .monster-item {
     backface-visibility: visible !important;
     transform-style: preserve-3d;
-    transition: all 0.2s ease, right 0s, left 0s; 
+    transition: all 0.2s ease, right 0s, left 0s;
 }
 
 /* Critical fix for dragged elements */
@@ -222,22 +244,24 @@ body .monster-item[data-dragging="true"] {
     pointer-events: auto !important;
     transform: none !important;
     transition: none !important;
-    right: auto !important; /* Prevent right positioning during drag */
+    right: auto !important;
+    /* Prevent right positioning during drag */
 }
 
 /* Make sure the element being dragged always shows */
-body > .monster-item {
+body>.monster-item {
     z-index: 9999 !important;
     visibility: visible !important;
     pointer-events: auto !important;
 }
 
 /* Fix for right-side elements after placement */
-.left-monsters .monster-item, 
+.left-monsters .monster-item,
 .right-monsters .monster-item {
     visibility: visible !important;
     opacity: 1 !important;
-    transition: none !important; /* Prevent any transitions that might hide the element */
+    transition: none !important;
+    /* Prevent any transitions that might hide the element */
 }
 
 /* Make sure .right-monsters contents are properly visible */
