@@ -3,32 +3,40 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link href="css/grid.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <title>Music Mixer</title>
 </head>
 
 <body>
-    <section id="buttons" class="grid-con">
-        <img src="images/Speaker_Icon.svg" alt="Speaker Icon" id="speaker-icon" class="box l-col-start-4 l-col-end-5">
-        <img src="images/play_icon.svg" alt="Play Icon" id="play-icon" class="box l-col-start-6">
-        <img src="images/pause_icon.svg" alt="Pause Icon" id="pause-icon" class="box l-col-start-7">
-        <img src="images/refresh_icon.svg" alt="Refresh Icon" id="refresh-icon" class="box l-col-start-10">
-    </section>
+    <div class="container">
+        <section id="buttons" class="grid-con">
+            <img src="images/Speaker_Icon.svg" alt="Speaker Icon" id="speaker-icon">
+            <img src="images/play_icon.svg" alt="Play Icon" id="play-icon">
+            <img src="images/pause_icon.svg" alt="Pause Icon" id="pause-icon">
+            <img src="images/refresh_icon.svg" alt="Refresh Icon" id="refresh-icon">
+        </section>
 
-    <section id="monsters" class="grid-con">
-        <img src="images/Bowgart.svg" alt="Monster Bowgart" id="monster-bowgart" class="box l-col-span-2">
-        <img src="images/Tweedle.svg" alt="Monster Tweedle" id="monster-tweedle" class="box l-col-start-11 l-col-span-2">
-        <img src="images/Congle.svg" alt="Monster Congle" id="monster-congle" class="box l-col-start-1 l-col-span-2">
-        <img src="images/Viveine.svg" alt="Monster Viveine" id="monster-viveine" class="box l-col-start-11 l-col-span-2">
-        <img src="images/Deedge.svg" alt="Monster Deedge" id="monster-deedge" class="box l-col-start-1 l-col-span-2">
-        <img src="images/Xyster.svg" alt="Monster Xyster" id="monster-xyster" class="box l-col-start-11 l-col-span-2">
-        <img src="images/Dwumrohl.svg" alt="Monster Dwumrohl" id="monster-dwumrohl" class="box l-col-start-3 l-col-span-2">
-        <img src="images/Entbrat.svg" alt="Monster Entbrat" id="monster-entbrat" class="box l-col-start-5 l-col-span-2">
-        <img src="images/Maw.svg" alt="Monster Maw" id="monster-maw" class="box l-col-start-7 l-col-span-2">
-        <img src="images/Thrumble.svg" alt="Monster Thrumble" id="monster-thrumble" class="box l-col-start-9 l-col-span-2">
-    </section>
+        <section id="monsters" class="monsters-container">
+            <div class="left-monsters">
+                <img src="images/Bowgart.svg" alt="Monster Bowgart" id="monster-bowgart" class="monster-item">
+                <img src="images/Tweedle.svg" alt="Monster Tweedle" id="monster-tweedle" class="monster-item">
+                <img src="images/Congle.svg" alt="Monster Congle" id="monster-congle" class="monster-item">
+                <img src="images/Viveine.svg" alt="Monster Viveine" id="monster-viveine" class="monster-item">
+                <img src="images/Maw.svg" alt="Monster Maw" id="monster-maw" class="monster-item">
+            </div>
+            <div class="right-monsters">
+                <img src="images/Deedge.svg" alt="Monster Deedge" id="monster-deedge" class="monster-item">
+                <img src="images/Xyster.svg" alt="Monster Xyster" id="monster-xyster" class="monster-item">
+                <img src="images/Dwumrohl.svg" alt="Monster Dwumrohl" id="monster-dwumrohl" class="monster-item">
+                <img src="images/Entbrat.svg" alt="Monster Entbrat" id="monster-entbrat" class="monster-item">
+                <img src="images/Thrumble.svg" alt="Monster Thrumble" id="monster-thrumble" class="monster-item">
+            </div>
+        </section>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
